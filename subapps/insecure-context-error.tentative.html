@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<title>Sub Apps: subApps is undefined in insecure context (non-https)</title>
+<script src="/resources/testharness.js"></script>
+<script src="/resources/testharnessreport.js"></script>
+<script>
+
+test(() => {
+  assert_equals(navigator.subApps, undefined);
+}, 'subApps is not defined in insecure context.');
+
+</script>
